@@ -57,8 +57,22 @@
   </div>
   
 </div>
-    <script type="text/javascript">
-        
-    </script>
+ <script>
+// Serial
+const params = new URL(window.location.href).searchParams
+console.log(params.get(''));
+document.getElementById('serialku').innerHTML = params.get('serial')
+  
+  
+// ORDER ID
+const params2 = new URL(window.location.href).searchParams
+console.log(params2.get(''));
+document.getElementById('orderidku').innerHTML = params2.get('orderid')
+
+// Email
+const params3 = new URL(window.location.href).searchParams
+console.log(params3.get(''));
+document.getElementById('emailku').innerHTML = params3.get('email')
+  </script>
 </body>
 </html>
