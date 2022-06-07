@@ -1,7 +1,7 @@
 <head>
 <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'/>
 </head>
-<body data-toggle="modal" data-target="#exampleModalLong">
+<body>
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -43,4 +43,9 @@ Silahkan hubungi kami melalui chat tempat anda melakukan pembelian jika memiliki
     </div>
   </div>
 </div>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#exampleModalLong').modal('show');
+    });
+</script>
 </body>
