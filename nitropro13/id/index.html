@@ -44,6 +44,9 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Petunjuk Aktivasi Nitro Pro 13</h4>
+          <hr>
+          <p>Marketplace: <b><span id="marketku"></span></b></p>
+          <p>No. Pesanan: <b><span id="nopesku"></span></b></p>
         </div>
         <div class="modal-body">
 <ol>
@@ -101,6 +104,17 @@ document.getElementById('orderidku').innerHTML = params2.get('orderid')
 const params3 = new URL(window.location.href).searchParams
 console.log(params3.get(''));
 document.getElementById('emailku').innerHTML = params3.get('email')
+
+// Market
+const params3 = new URL(window.location.href).searchParams
+console.log(params3.get(''));
+document.getElementById('marketku').innerHTML = params3.get('market')
+
+// Nopes
+const params3 = new URL(window.location.href).searchParams
+console.log(params3.get(''));
+document.getElementById('nopesku').innerHTML = params3.get('nopes')
+   
   </script>
 <script src="//code.tidio.co/jxvnmus92izvnppwlffsbu9ircnxdfbz.js" async></script>
 </body>
